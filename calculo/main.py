@@ -1,5 +1,7 @@
 from derivada import *
 
-equacao = leia_equacao(' 1 23')
 
-deriva_ordem('a', 2)
+
+equacao = leia_equacao('Digite uma equação: ')
+
+deriva(equacao)

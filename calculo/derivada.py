@@ -1,11 +1,15 @@
 def deriva(func):
-    print(f'Derivou a função')
+    print(f'Derivou a função {func}')
 
 
-def leia_equacao(eq):
+def leia_equacao(msg):
+    eq = input(msg)
     eq = eq.replace(' ', '')
     for l in eq:
-        print(l)
+        if not l.isalpha() and not l.isnumeric() and l not in '+-/*':
+            print('Equação inválida...')
+        else:
+            return eq
 
 
 def deriva_ordem(func, quant):
