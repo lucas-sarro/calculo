@@ -3,4 +3,7 @@ def deriva(func):
 
 
 def deriva_ordem(func, quant):
-    pass
+    for c in range(0, quant):
+        func = deriva(func)
+    
+    return func 
