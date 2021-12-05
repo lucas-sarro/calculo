@@ -1,5 +1,5 @@
-import derivada
+from derivada import *
 
 equacao = leia_equacao()
 
-derivada.deriva_ordem('a', 2)
+deriva_ordem('a', 2)
