@@ -2,8 +2,10 @@ def deriva(func):
     print(f'Derivou a função')
 
 
-def leia_equacao():
-    pass
+def leia_equacao(eq):
+    eq = eq.replace(' ', '')
+    for l in eq:
+        print(l)
 
 
 def deriva_ordem(func, quant):
